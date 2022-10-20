@@ -15,19 +15,51 @@ header .logo{
 }
 header .container-searchbox{
     flex: 50%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-border-radius: 5rem;
-border: 0.05em solid gray;
-padding: 0.2em 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5rem;
+    border: 0.05em solid gray;
+    padding: 0.2em 0.5em;
 }
 header .container-searchbox .content-searchbox{
+    width: 100%;
     max-width: 500px;
     padding-right: 1em;
-    color: #00000050;
 }
 header .container-searchbox .searchicon:hover{
     transform: scale(1.2);
     cursor: pointer;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+main .container-info-card {
+    flex: 50%;
+}
+main .container-info-card:first-child{
+    padding-right: 2em;
+
+}
+main .container-info-card .header-info-content{
+    padding:  0.5em;
+    border: 1px solid black;
+    border-radius: 1em 1em 0 0;
+}
+main .container-info-card .info-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid black;
+    border-top: 0;
+    padding:  0.5em;
+    border-radius: 0 0 1em 1em ;
+}
+main .container-info-card img{
+    border-radius: 10%;
 }
