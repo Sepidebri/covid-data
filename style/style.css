@@ -1,0 +1,33 @@
+@import "reset.css";
+@import "global.css";
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+header .logo{
+    font-size: 50px;
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(9, 71, 21);
+    flex: 50%;
+}
+header .container-searchbox{
+    flex: 50%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-radius: 5rem;
+border: 0.05em solid gray;
+padding: 0.2em 0.5em;
+}
+header .container-searchbox .content-searchbox{
+    max-width: 500px;
+    padding-right: 1em;
+    color: #00000050;
+}
+header .container-searchbox .searchicon:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
