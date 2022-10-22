@@ -5,16 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <script defer src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js" integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+    <script defer src="https://kit.fontawesome.com/507f17eebc.js" crossorigin="anonymous"></script>
+    <script defer type="module"  src="/app/app.js"></script>
     <title>Covid 19</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="container-searchbox">
-                <input class="content-searchbox" placeholder="search by name of country"/>
-                <div class="searchicon">
-                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <div class="container-search-content">
+                <div class="container-searchbox">
+                    <input class="content-searchbox" placeholder="search by name of country"/>
+                    <div class="searchicon">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
                 </div>
+                <!-- <div class="drop-down">
+                    <div class="searched-info">
+                        <div class="flag">
+                            <img
+                            src="https://flagcdn.com/32x24/za.png"
+                            srcset="https://flagcdn.com/64x48/za.png 2x,
+                              https://flagcdn.com/96x72/za.png 3x"
+                            width="32"
+                            height="24"
+                            alt="South Africa">
+                        </div>
+                        <div class="country">za</div>
+                    </div>
+                </div> -->
             </div>
             <div class="logo">
                 <i class="fa-solid fa-virus-covid"></i>
@@ -22,14 +42,28 @@
         </header>
         <main>
             <div class="container-info-card">
-                <header class="header-info-content">country : iran</header>
+                <!-- <header class="header-info-content">                            <img
+                    src="https://flagcdn.com/32x24/za.png"
+                    srcset="https://flagcdn.com/64x48/za.png 2x,
+                      https://flagcdn.com/96x72/za.png 3x"
+                    width="32"
+                    height="24"
+                    alt="South Africa"> abbreviation</header>
                 <main class="info-content">
                     <p>country : iran</p>
-                    <p>country : iran</p>
-                    <p>country : iran</p>
-                    <p>country : iran</p>
-                    <p>country : iran</p>
-                </main>
+                    <p>Capital : iran</p>
+                    <p>confirmed : iran</p>
+                    <p>death : iran</p>
+                    <p>life expectancy : iran</p>
+                    <p>population : iran</p>
+                    <p>area : iran</p>
+                </main> -->
+                <section>
+                    <p class="content-fist-page">There's <span class="sub-content-first-page"></span></p>
+                    <p class="content-fist-page">confirmed cases of</p>
+                    <p class="content-fist-page">Coronavirus around</p>
+                    <p class="content-fist-page">the world today.</p>
+                </section>
             </div>
             <div class="container-info-card">
                 <img src="/assets/images/card-coronavirus-vaccine-distribution-solutions-available.jpg" alt="covid-19">
@@ -37,7 +71,5 @@
         </main>
         <footer>God bless you <i class="fa-solid fa-heart-pulse"></i></footer>
     </div>
-
-    <script  src="https://kit.fontawesome.com/507f17eebc.js" crossorigin="anonymous"></script>
-</body>
+    </body>
 </html>

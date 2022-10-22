@@ -13,12 +13,15 @@ header .logo{
     color: rgb(9, 71, 21);
     flex: 50%;
 }
+header .container-search-content{
+    flex: 20%;
+    position: relative;
+}
 header .container-searchbox{
-    flex: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 5rem;
+    border-radius: 0.5rem;
     border: 0.05em solid gray;
     padding: 0.2em 0.5em;
 }
@@ -31,11 +34,37 @@ header .container-searchbox .searchicon:hover{
     transform: scale(1.2);
     cursor: pointer;
 }
+header .container-search-content .drop-down {
+    background-color: #ffffff;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 0.2em 0.5em;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+}
+header .container-search-content .drop-down .searched-info{
+    display: flex;
+    align-items: center;
+}
+header .container-search-content .drop-down .searched-info .flag{
+    padding-right: 1em;
+}
+
 main{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em 0;
+}
+main section {
+    font-size: 4rem;
+    font-weight: bold;
+}
+main section .sub-content-first-page{
+    color: red;
 }
 main .container-info-card {
     flex: 50%;
@@ -44,10 +73,16 @@ main .container-info-card:first-child{
     padding-right: 2em;
 
 }
+main .container-info-card:last-child{
+    padding-left: 2em;
+}
 main .container-info-card .header-info-content{
     padding:  0.5em;
     border: 1px solid black;
     border-radius: 1em 1em 0 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
 }
 main .container-info-card .info-content{
     display: flex;
